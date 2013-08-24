@@ -147,7 +147,23 @@ li.share-end{display: none !important; clear: none !important;}
 .sharedaddy ul{margin: 0; padding: 0; list-style: none }
 .sharedaddy li{float: left; margin: 0 !important;  list-style: none !important; padding: 0 !important}
 
-<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+
+.entry-content p{
+	font-family: "ff-tisa-web-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #333332;
+}
+
+
+@font-face {
+font-family: FF-Tisa;
+src: url('https://github.com/lcdvirgo/htdocs/raw/master/font/FF%20Tisa/TE111761.ttf'),
+
+}
+
+
+
 
 @media (max-width: 630px) {
 	/* Responsive Comments */
