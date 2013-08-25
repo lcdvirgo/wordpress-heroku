@@ -5,6 +5,20 @@
 <!--[if IE 9 ]><html <?php language_attributes(); ?> class="no-js ie ie9 lte9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 	<head>
+		<script type="text/javascript">
+		  var imageURLs = [
+		       "http://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/15.e2lYGB--9rK5NxM_3B3i4A.jpg"
+		     , "https://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/17.c_5idL7nFNMl36OsbrREog.jpg"
+		  ];
+		  function getImageTag() {
+		    var img = '<img src=\"';
+		    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+		    img += imageURLs[randomIndex];
+		    img += '\" alt=\"Some alt text\"/>';
+		    return img;
+		  }
+		</script>
+
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
 		<title><?php wp_title( 'by', true, 'right' ); bloginfo( 'name' ); ?></title>
