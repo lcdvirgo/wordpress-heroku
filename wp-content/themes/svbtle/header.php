@@ -5,21 +5,6 @@
 <!--[if IE 9 ]><html <?php language_attributes(); ?> class="no-js ie ie9 lte9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 	<head>
-		/*<script type="text/javascript">
-		  var imageURLs = [
-		       "https://dl.dropboxusercontent.com/u/64057546/image1.jpg"
-		     , "https://dl.dropboxusercontent.com/u/64057546/image2.jpg"
-		     , "https://dl.dropboxusercontent.com/u/64057546/image3.jpg"
-		  ];
-		  function getImageTag() {
-		    var img = '<img src=\"';
-		    var randomIndex = Math.floor(Math.random() * imageURLs.length);
-		    img += imageURLs[randomIndex];
-		    img += '\" alt=\"Some alt text\"/>';
-		    return img;
-		  }
-		</script>*/
-
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
 		<title><?php wp_title( 'by', true, 'right' ); bloginfo( 'name' ); ?></title>
@@ -57,8 +42,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<header id="sidebar">   
-			<sidebar id="<?php echo day() ? 'day' : 'night'; ?>">
+		<header id="sidebar"> 
 			<figure class="logo medium">
 				<a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
 			</figure>
