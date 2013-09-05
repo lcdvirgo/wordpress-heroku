@@ -5,10 +5,11 @@
 <!--[if IE 9 ]><html <?php language_attributes(); ?> class="no-js ie ie9 lte9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 	<head>
-		<script type="text/javascript">
+		/*<script type="text/javascript">
 		  var imageURLs = [
-		       "http://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/15.e2lYGB--9rK5NxM_3B3i4A.jpg"
-		     , "https://dnqgz544uhbo8.cloudfront.net/_/fp/img/home/17.c_5idL7nFNMl36OsbrREog.jpg"
+		       "https://dl.dropboxusercontent.com/u/64057546/image1.jpg"
+		     , "https://dl.dropboxusercontent.com/u/64057546/image2.jpg"
+		     , "https://dl.dropboxusercontent.com/u/64057546/image3.jpg"
 		  ];
 		  function getImageTag() {
 		    var img = '<img src=\"';
@@ -17,7 +18,7 @@
 		    img += '\" alt=\"Some alt text\"/>';
 		    return img;
 		  }
-		</script>
+		</script>*/
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5">
@@ -56,7 +57,8 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<header id="sidebar">
+		<header id="sidebar">   
+			<sidebar id="<?php echo day() ? 'day' : 'night'; ?>">
 			<figure class="logo medium">
 				<a href="<?php echo home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
 			</figure>
@@ -65,7 +67,7 @@
 			<h3><?php bloginfo( 'description' ); ?></h3>
 
 			<ul id="user_nav">
-			
+
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 				<?php if ($options['rss-link']): ?>
