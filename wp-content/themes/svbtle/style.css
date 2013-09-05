@@ -162,6 +162,8 @@ src: url('https://github.com/lcdvirgo/htdocs/raw/master/font/FF%20Tisa/TE111761.
 
 
 @media (max-width: 630px) {
+	header#sidebar{ background-image: url('bg.php'); height:100%}
+
 	/* Responsive Comments */
 	.comments {padding-top: 25px; padding-left: 25px; padding-right: 25px;}
 	#respond .comment-form-author label, #respond .comment-form-email label, 
